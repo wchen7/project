@@ -112,3 +112,39 @@ Ten messages load in a chat channel at a time, implemented with an infinite scro
 ### 2.10 Feature 10 - FAQ Chatbot
 
 We launched our very own HuddleBot which is designed for handling general frequently asked and answered questions that many users may face when using our platform. The chatbot detects keywords that determine the bot response which includes accepted payments, refund handling, cancellations, purchasing issues, ticket transfers, ticket delivery, booking limit and a general guide to getting started.
+
+## 3. Installation Guide
+
+Open the terminal and install the packages installer.
+
+1. `sudo apt-get install python3-pip python-dev`
+2. `sudo apt install python3-dev libpq-dev`
+
+Note: Two separate terminals are required to be opened at the same time to accommodate backend and frontend servers.
+
+### Backend
+
+Navigate to the backend directory via `HuddleApp/backend` and install the required packages via `pip install -r requirements.txt`.
+
+The backend can be started by running: `python3 -m server`.
+(Note: backend port may be changed in src/config.py file)
+
+### Frontend
+
+Navigate to the frontend directory via `HuddleApp/frontend`.
+
+Install package manager npm by: `sudo apt install npm`.
+
+If the version of this installation is outdated and needs to be updated, run:
+
+1. `sudo npm cache clean -f`
+2. `sudo npm install -g n`
+3. `sudo n stable`
+
+The above will update npm and nodeJs versions. Huddle runs on npm 9.6.7 and node 18.17.0.
+
+Then install frontend libraries by running: `npm install`.
+
+Launch the frontend by running: `npm start`.
+
+This completes the backend and frontend installation.
