@@ -1,0 +1,8 @@
+APScheduler==3.10.1
+Flask==2.3.2
+Flask-Cors==4.0.0
+Pillow==10.0.0
+psycopg2==2.9.6
+psycopg2-binary==2.9.6
+PyJWT==2.0.1
+Werkzeug==2.3.6

@@ -1,0 +1,228 @@
+.section {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(11, 1fr);
+	row-gap: 20px;
+	width: 30vw;
+	padding: 10px 0 10px 0;
+	align-self: center;
+	justify-content: center;
+}
+
+.section>div {
+	border: 1px solid black;
+}
+
+.section>div:hover {
+	cursor: pointer;
+}
+
+.seat {
+	text-align: center;
+	background-color: #bfe8e2;
+	width: 55px;
+	height: 50px;
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.disabled {
+	text-align: center;
+	background-color: #D3D3D3;
+	width: 55px;
+	height: 50px;
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.booked {
+	text-align: center;
+	background-color: #c7e4fa;
+	width: 55px;
+	height: 50px;
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section .disabled:hover {
+	cursor: not-allowed;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+	/* border: 1pt solid black; */
+}
+
+button {
+	margin-top: 10px;
+}
+
+.music-stage {
+	width: 38vw;
+	height: 250px;
+	background-color: #333;
+	border-radius: 12px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.stage-floor {
+	width: 100%;
+	height: 50px;
+	background-color: #888;
+	position: absolute;
+	bottom: 0;
+	border-radius: 0 0 10px 10px;
+}
+
+.stage-platform {
+	width: 80%;
+	height: 150px;
+	background-color: #666;
+	position: absolute;
+	bottom: 50px;
+	left: 10%;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.stage-instruments {
+	width: 100%;
+	height: 100%;
+	background-color: #222;
+	position: relative;
+	animation: light-cycle 10s infinite;
+}
+
+.stage-lights {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.stage-light {
+	width: 35px;
+	height: 35px;
+	background-color: #ffd733;
+	border-radius: 50%;
+	margin: 0 5px;
+	animation: music-lights 5s infinite;
+}
+
+@keyframes music-lights {
+	0% {
+		background-color: #fff;
+	}
+
+	20% {
+		background-color: #800080;
+	}
+
+	40% {
+		background-color: #0000FF;
+	}
+
+	60% {
+		background-color: #00FFFF;
+	}
+
+	80% {
+		background-color: #FFFF00;
+	}
+
+	100% {
+		background-color: #FFA500;
+	}
+}
+
+@keyframes light-cycle {
+	0% {
+		background-color: #fff;
+		/* Light 1 color */
+	}
+
+	33% {
+		background-color: #ff0000;
+		/* Light 2 color */
+	}
+
+	66% {
+		background-color: #00ff00;
+		/* Light 3 color */
+	}
+
+	100% {
+		background-color: #fff;
+		/* Light 1 color */
+	}
+}
+
+.football-field {
+	width: 37.7vw;
+	height: 60vh;
+	background-color: #4CAF50;
+	/* Green color for the grass */
+	position: relative;
+	overflow: hidden;
+	margin: 1% auto 0.7% auto;
+}
+
+.grass {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #4CAF50;
+	/* Green color for the grass */
+}
+
+.boundary {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	right: 5%;
+	bottom: 5%;
+	border: 2px solid white;
+	/* White color for the boundary lines */
+}
+
+.business-stage {
+	width: 38vw;
+	height: 30vh;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.custom-card-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.formDiv {
+	width: 400px;
+	padding: 30px;
+	border-radius: 10px;
+	-webkit-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+	-moz-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+	box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+}

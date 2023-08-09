@@ -1,0 +1,33 @@
+.signUpButton {
+	align-self: center;
+	padding: 5px;
+	margin: 5px;
+	width: 100px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ffc600;
+	color: white;
+}
+
+.signUpButton:hover {
+	background-color: #ffd733;
+}
+
+.loginButton {
+	align-self: center;
+	padding: 5px;
+	margin: 5px;
+	width: 100px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	background-color: white;
+	border: 1px solid #ffd733;
+	color: #ffd733;
+}
+
+.loginButton:hover {
+	background-color: rgb(255, 215, 51) ;
+	color: white;
+}
