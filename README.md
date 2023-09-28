@@ -10,3 +10,7 @@ The 2 main projects include:
 - Huddle
 
 Installation guides can be found within.
+
+Current TypeScript project under developement:
+
+- Culinary Cache (https://github.com/wchen7/Culinary-Cache)
